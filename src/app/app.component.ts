@@ -7,12 +7,14 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home/home.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     RouterOutlet, 
+    CommonModule,
     HeaderComponent, 
     MatSidenavModule, 
     MatIconModule, 
