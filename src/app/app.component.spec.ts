@@ -17,7 +17,7 @@ describe('AppComponent', () => {
   it(`should have the 'angular-playground' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-playground');
+    expect(app.title).toEqual('playground');
   });
 
   it('should render title', () => {

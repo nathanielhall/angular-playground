@@ -1,7 +1,8 @@
-import { Component, Input} from '@angular/core';
+import { Component, Input, Output} from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
+// import {MatDrawerToggleResult} from '@angular/toolbar/..'
 
 @Component({
   selector: 'app-header',
@@ -10,8 +11,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
-  @Input('click') click: () => void = () => {}
-  @Input('title') title?: string = "Playground"
-
+export class HeaderComponent  {
+  @Input() click: () => void = () => {}
+  @Input({required: true}) title?: string = '';  
 }

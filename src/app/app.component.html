@@ -168,7 +168,7 @@
   }
 </style>
 
-<app-header (click)="drawer.toggle()"></app-header>
+<app-header (click)="drawer.toggle()" [title]="title"></app-header>
 
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side">
